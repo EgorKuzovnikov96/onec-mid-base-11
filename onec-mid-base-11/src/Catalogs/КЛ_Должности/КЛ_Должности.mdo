@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4aa1716d-1dce-44a1-a030-d7eb0a341baa">
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4fa94064-349e-45a6-8af0-60cdec0996ba">
   <producedTypes>
-    <objectType typeId="ac5d5280-d59f-4d6f-b989-7f64aae5ed80" valueTypeId="1a697e48-bdc6-4461-b595-50a4a4dfef07"/>
-    <refType typeId="78778e5f-75fc-4216-b956-e971025877f8" valueTypeId="157d4fe6-3f56-4528-875d-6e8bc664d19a"/>
-    <selectionType typeId="34496a0b-cbcf-46ca-a90a-7ce9c39f4579" valueTypeId="a7923db0-9c7a-4762-836b-b2a740e5cb93"/>
-    <listType typeId="646feee7-694d-454f-b7ed-646f8483fe17" valueTypeId="da6523c9-0f2c-4a80-8e8d-2519eb1c7dab"/>
-    <managerType typeId="9fdd1587-f4a1-4e8f-9afa-fc7644f1a90a" valueTypeId="0e333f07-754c-47bd-a10a-3ff137c9145b"/>
+    <objectType typeId="baf5bcf8-602f-43d7-9ad0-05a635451a83" valueTypeId="91efe7d1-c1be-4fd1-b427-a074586821b7"/>
+    <refType typeId="90f9eb23-b38e-408f-8ad1-1f805e441fda" valueTypeId="6a5f6940-68a6-4cb4-a7c6-033eeab41e06"/>
+    <selectionType typeId="2d0499af-8c2e-4a70-a536-aa5ebe277209" valueTypeId="7ddc0478-f87c-4812-b400-9fe3268de617"/>
+    <listType typeId="9c55664b-2d5f-4875-a166-ff1b1aa92a57" valueTypeId="b2a35647-a431-464e-8bc7-795430c92319"/>
+    <managerType typeId="67a73a68-9efd-4a06-a98f-87adaa3d9e32" valueTypeId="fefce26e-4f4e-41d3-ada4-76df2cec54a9"/>
   </producedTypes>
-  <name>КЛ_КонтакныеЛица</name>
+  <name>КЛ_Должности</name>
   <synonym>
     <key>ru</key>
-    <value>Контакные лица</value>
+    <value>Должности</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>Catalog.КЛ_КонтакныеЛица.StandardAttribute.Code</inputByString>
-  <inputByString>Catalog.КЛ_КонтакныеЛица.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.КЛ_Должности.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.КЛ_Должности.StandardAttribute.Description</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
@@ -56,10 +56,6 @@
   <standardAttributes>
     <dataHistory>Use</dataHistory>
     <name>Owner</name>
-    <synonym>
-      <key>ru</key>
-      <value>Контрагент</value>
-    </synonym>
     <fillFromFillingValue>true</fillFromFillingValue>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
@@ -81,7 +77,7 @@
     <name>Description</name>
     <synonym>
       <key>ru</key>
-      <value>ФИО</value>
+      <value>Должность</value>
     </synonym>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
@@ -101,15 +97,14 @@
   <fullTextSearch>Use</fullTextSearch>
   <objectPresentation>
     <key>ru</key>
-    <value>Контакное лицо</value>
+    <value>Должность</value>
   </objectPresentation>
   <listPresentation>
     <key>ru</key>
-    <value>Контакные лица</value>
+    <value>Должности</value>
   </listPresentation>
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>
-  <owners>Catalog.Контрагенты</owners>
   <codeLength>9</codeLength>
   <descriptionLength>150</descriptionLength>
   <codeType>String</codeType>
@@ -119,73 +114,4 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
-  <attributes uuid="7648d164-6727-46f2-bbe3-a220672fa79a">
-    <name>КонтакныйТелефон</name>
-    <synonym>
-      <key>ru</key>
-      <value>Контакный телефон</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>50</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="9765fba6-c6a8-4315-8a22-64dedee8a146">
-    <name>Должность</name>
-    <synonym>
-      <key>ru</key>
-      <value>Должность</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.КЛ_Должности</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="932abf0e-1f28-4319-bef0-39e77bd33bf3">
-    <name>ДействуетНаОсновании</name>
-    <synonym>
-      <key>ru</key>
-      <value>Действует на основании</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>150</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="b3e4ff77-7ca9-487e-990b-0c68e34b41a3">
-    <name>Заметка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Заметка</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
 </mdclass:Catalog>
