@@ -152,6 +152,25 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="881f4c72-7c65-47a5-aff4-95b6556abd81">
+    <name>КЛ_КонтакноеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>К л контакное лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КЛ_КонтакныеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Document.ПоступлениеТоваровУслуг.Attribute.Контрагент</field>
+    </choiceParameterLinks>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="934b763d-04d8-4059-a85c-e4cbfd3acd29">
     <name>ФормаДокумента</name>
     <synonym>
