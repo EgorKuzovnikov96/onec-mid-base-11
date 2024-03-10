@@ -197,7 +197,7 @@
     <name>КЛ_КонтакноеЛицо</name>
     <synonym>
       <key>ru</key>
-      <value>К л контакное лицо</value>
+      <value>Контакное лицо</value>
     </synonym>
     <type>
       <types>CatalogRef.КЛ_КонтакныеЛица</types>
